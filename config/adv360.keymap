@@ -65,11 +65,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1             &kp F2               &kp F3               &kp F4               &kp F5                &kp F6                 &tog 6                                         &mo 2      &kp F7  &kp F8                &kp F9                 &kp F10                     &kp F11     &kp F12
-&mt RA(N7) RA(N6)  &mt RA(LS(A)) RA(A)  &mt RA(LS(O)) RA(O)  &mt RA(LS(U)) RA(U)  &mt RA(LS(S)) RA(S)   &kp RA(N5)             &kp LC(A)                                      &kp LC(X)  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &mt RA(EQUAL) RA(KP_MINUS)  &trans      &trans
-&tog 5             &kp EXCL             &kp AT_SIGN          &kp HASH             &kp DOLLAR            &kp PERCENT            &none      &trans  &trans      &trans  &trans  &none      &trans  &kp LS(N8)            &kp LS(N9)             &kp RA(N8)                  &kp RA(N9)  &trans
-&trans             &kp CARET            &kp AMPERSAND        &kp ASTERISK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                     &trans      &trans                     &trans  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &trans                      &trans      &trans
-&trans             &trans               &trans               &trans               &trans                                       &trans     &trans  &trans      &trans  &trans  &trans             &trans                &trans                 &trans                      &trans      &trans
+&kp F1       &kp F2               &kp F3               &mt LA(F4) F4        &kp F5               &kp F6      &tog 6                                                 &mo 2      &kp F7  &kp F8                &kp F9                 &kp F10                     &kp F11     &kp F12
+&tog 5       &trans               &trans               &trans               &trans               &trans      &kp LC(A)                                              &kp LC(X)  &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &mt RA(EQUAL) RA(KP_MINUS)  &trans      &trans
+&kp LA(TAB)  &mt RS(RA(A)) RA(A)  &mt RA(LS(O)) RA(O)  &mt RA(LS(U)) RA(U)  &mt RA(RS(S)) RA(S)  &kp RA(N5)  &mt RA(N7) RA(N6)  &trans  &trans      &trans  &trans  &none      &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RA(N8)                  &kp RA(N9)  &trans
+&trans       &trans               &trans               &trans               &trans               &trans                                 &trans      &trans                     &trans  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &trans                      &trans      &trans
+&trans       &trans               &trans               &trans               &trans                           &trans             &trans  &trans      &trans  &trans  &trans             &trans                &trans                 &trans                      &trans      &trans
             >;
         };
 
@@ -97,11 +97,11 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &trans          &trans          &trans           &trans  &trans                                      &trans  &trans  &trans    &trans    &trans          &trans           &trans
-&trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans                                      &trans  &trans  &trans    &trans    &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &msc SCRL_UP    &msc SCRL_DOWN   &trans
-&trans  &trans  &trans          &trans          &trans           &trans                  &trans      &trans                  &trans  &trans    &trans    &trans          &trans           &trans
-&trans  &trans  &trans          &trans          &trans                   &trans  &trans  &trans      &trans  &trans  &trans          &trans    &trans    &trans          &trans           &trans
+&trans  &trans  &trans          &trans          &trans           &trans  &trans                                      &trans  &trans  &trans    &trans        &trans          &trans           &trans
+&trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans                                      &trans  &trans  &trans    &kp UP_ARROW  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT       &trans           &trans
+&trans  &trans  &trans          &trans          &trans           &trans                  &trans      &trans                  &trans  &mkp MB1  &mkp MB2      &msc SCRL_DOWN  &msc SCRL_UP     &trans
+&trans  &trans  &trans          &trans          &trans                   &trans  &trans  &trans      &trans  &trans  &trans          &trans    &trans        &trans          &trans           &trans
             >;
         };
 
