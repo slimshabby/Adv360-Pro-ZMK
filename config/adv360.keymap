@@ -50,6 +50,34 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        ue {
+            bindings = <&kp RA(U)>;
+            key-positions = <31 32>;
+            layers = <0>;
+        };
+
+        oe {
+            bindings = <&kp RA(O)>;
+            key-positions = <49 50>;
+            layers = <0>;
+        };
+
+        ae {
+            bindings = <&kp RA(A)>;
+            key-positions = <41 42>;
+            layers = <0>;
+        };
+
+        ss {
+            bindings = <&kp RA(S)>;
+            key-positions = <55 56>;
+            layers = <0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
